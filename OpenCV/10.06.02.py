@@ -13,8 +13,8 @@ for (x,y,w,h) in body :
     cv2.rectangle(image,(x,y),(x+w,y+h),(0,0,255),30)
     num += 1
 
+print("현재 판단되는 인원은 ",num)
 image = cv2.resize(image,(500,600))
-print('사진에서 보이는 인원 = ',num)
 cv2.imshow('image', image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
